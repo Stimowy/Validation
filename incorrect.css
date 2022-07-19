@@ -1,0 +1,28 @@
+.item.incorrect{
+    border: 3px #d53b3b solid;
+}
+.item.incorrect ~ .itemSpan{
+    color: #c42a2a;
+}
+.item.correct{
+    border: 3px #3bd555 solid;
+}
+.item.correct ~ .itemSpan{
+    color: #1cb319;
+}
+.error{
+    position: absolute;
+    display: none;
+    align-items: center;
+    left: calc(100% + 30px);
+    top: 0px;
+    height: 40px;
+    width: max-content;
+    border: 3px #d53b3b solid;
+    background-color: #c42a2a88;
+    padding-inline: 4px;
+    border-radius: 18px;
+}
+.item.incorrect ~ .error{
+    display: flex;
+}

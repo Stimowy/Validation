@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="incorrect.css">
+</head>
+<body>
+    
+    <form id="container" autocomplete="off" onsubmit="return good()">
+        
+        <div class="group">
+            <input id="Company" class="item" type="text" placeholder=" ">
+            <span class="itemSpan">Company</span>
+            <span class="error">To pole musi zostać wypełnione</span>
+        </div>
+
+        <div class="group">
+            <input id="fName" class="item" type="text" placeholder=" ">
+            <span class="itemSpan">First Name</span>
+            <span class="error">To pole musi zostać wypełnione</span>
+        </div>
+
+        <div class="group">
+            <input id="sName" class="item" type="text" placeholder=" ">
+            <span class="itemSpan">Second Name</span>
+            <span class="error">To pole musi zostać wypełnione</span>
+        </div>
+
+        <div class="group">
+            <input id="eMail" class="item" type="text" placeholder=" ">
+            <span class="itemSpan">eMail address</span>
+            <span class="error" id="eMailError"></span>
+        </div>
+
+        <div class="group">
+            <select id="sector" class="item2">
+                <option value="None">Select Sector</option>
+                <option value="graphic">graphic</option>
+                <option value="programmer">programmer</option>
+                <option value="CEO">CEO</option>
+            </select>
+        </div>
+        
+        <button class="item2">Send</button>
+
+        
+        
+
+
+
+
+    </form>
+    
+    <script src="main.js"></script>
+</body>
+</html>
